@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+}
+
+#map {
+    height: 100vh;
+}
+
+/*吹き出しの背景色変更*/
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background: #000;
+    color: #FFF;
+}
+
+img {
+    width: 100%;
+}
+
+#loading {
+    transition: all 3s; /*ローディングにかかる時間*/
+    background-color: #000;
+    z-index: 999;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .loading-text {
+    font-weight: bold;
+    text-align: center;
+    color: yellow;
+    font-size: 60px;
+  }
+  
+ /* .spin {
+    width: 64px;
+    height: auto;
+  } */
+  
+  .loaded {
+    opacity: 0;
+    visibility: hidden;
+  }
