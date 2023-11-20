@@ -1,13 +1,13 @@
 // 定数の定義
-//const loading = document.getElementById('loading');
+const loading = document.getElementById('loading');
 
 // cssクラスを追加する関数
-//function animation(){
- // loading.classList.add('loaded');
-//}
+function animation(){
+  loading.classList.add('loaded');
+}
 
 // 指定秒後に動作させる
-//window.setTimeout( animation, 2000 );
+window.setTimeout( animation, 1100 );
 
 const map = L.map('map').setView([35.70579628381622, 139.75185694454206], 6);
 
